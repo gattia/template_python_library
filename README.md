@@ -165,7 +165,10 @@ If you want to contribute, please read over the documentaiton in `CONTRIBUTING.m
 To build the docs, run `make docs`. If the docs are already built, you might need to delete
 them before they can be rebuilts: `rm -rf /docs`, then `make docs`. You then just need to 
 activate github pages in your settings on the repository, and select the home dir for the 
-docs to `/docs` on the `main` branch. Like in the following figure. 
+docs to `/docs` on the `main` branch. Like in the following:
+
+![Setup Docs on Github Pages](media/setting_up_docs_automatically.png)
+
 
 # License
 MIT License
