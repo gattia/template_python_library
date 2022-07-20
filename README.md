@@ -1,3 +1,9 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)<br>
+![Build Status](https://github.com/gattia/cycpd/actions/workflows/build-test.yml/badge.svg?branch=main)<br>
+|[Documentation](http://anthonygattiphd.com/template_python_library/)|
+
+
+
 # Introduction
 {update_here}
 This package is an example/template for building repositories. The choices made
