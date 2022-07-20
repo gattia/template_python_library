@@ -1,5 +1,5 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)<br>
-![Build Status](https://github.com/gattia/cycpd/actions/workflows/build-test.yml/badge.svg?branch=main)<br>
+![Build Status](https://github.com/gattia/template_python_library/actions/workflows/build-test.yml/badge.svg?branch=main)<br>
 |[Documentation](http://anthonygattiphd.com/template_python_library/)|
 
 
