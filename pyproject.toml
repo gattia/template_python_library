@@ -17,7 +17,7 @@ description = "My package description"
 readme = "README.md"
 requires-python = ">=3.7"
 keywords = ["python"]
-license = { file = "LICENSE" }
+license = MIT
 authors = [
   { name = "Anthony Gatti", email = "anthony.a.gatti@gmail.com" },
 ]
