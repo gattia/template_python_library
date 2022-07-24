@@ -7,4 +7,4 @@ and should be adjusted as you best see fit.
 
 from .main import *
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
