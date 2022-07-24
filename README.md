@@ -32,6 +32,10 @@ with the name of the new repository that you are creating. Also, replace
 ## Structure 
 Here is the general structure of this setup. Below this structure are quick instructions of 
 things to change for your new repository. 
+
+Instructions on `Packaging` from python are provided here: 
+- https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
 ```
 my_package/
     my_package/ 
@@ -75,6 +79,15 @@ my_package/
 
     setup.py 
         # file to call to build library `python setup.py install`
+        # setup.py is no longer encouraged. We provide the most basic one here
+        # this can be used to install in editable mode.
+        # https://setuptools.pypa.io/en/latest/userguide/quickstart.html#development-mode
+        # this is only needed for editable mode because `pyproject.toml` not fully supported for 
+        # editable mode (as described in link above). 
+        #
+        # also, the setup.py might be needed for installing cython dependencies
+        # Example here: https://github.com/gattia/cycpd/blob/e235da5276652eea12875aef3c8280a9b673122e/setup.py#L12-L20
+        # and here: https://github.com/gattia/cycpd/blob/e235da5276652eea12875aef3c8280a9b673122e/setup.py#L48
 
     pyproject.toml 
         # provides other info for setup.py, and other tools (e.g., linting)

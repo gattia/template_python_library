@@ -8,17 +8,22 @@ requirements-conda:
 	conda install --file requirements.txt
 
 build:
-	pip install -e .
+	python -m build -o wheelhouse
 
 install:
-	python setup.py install
+	pip install .
+
+#python setup.py install
+
+install-dev: 
+	pip install --editable .
 
 # below is specifically for building / forcing building of cython code. 
 # build-cython:
 # 	python setup.py build_ext -i --force
 
 dev:
-	pip install pytest black isort wheel pdoc3 coverage
+	pip install --upgrade pytest black isort wheel pdoc3 coverage build
 
 dev-mamba:
 	mamba install pytest black isort wheel pdoc3 coverage

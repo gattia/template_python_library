@@ -6,8 +6,6 @@ name: pypi
 on:
   push:
     branches: [ main ]
-  # pull_request:
-  #   branches: [ main ]
 
 jobs:
 
@@ -30,27 +28,29 @@ jobs:
           make requirements
           pip install cibuildwheel
       
-      # - name: Install Cython code
-      #   run: |
-      #     make build-cython
+      # Update to only do push to pypi after succesfully running build-test.yml... instead of doing the tests here?
       - name: Install
         run: |
-          make build
+          make install
       
       - name: Test with pytest
         run: |
           make test
       
       # build source distribution for versions wheels arent build. 
+      # https://setuptools.pypa.io/en/latest/userguide/quickstart.html#install-build
       - name: Build source distribution
         run: |
-          python setup.py sdist -d wheelhouse
+          make build
+        # python setup.py sdist -d wheelhouse
+
       
       - uses: actions/upload-artifact@v2
         with:
           path: ./wheelhouse/*.tar.gz
 
-  # BUILD WHEELS ONLY NEEDED FOR NON-PURE PYTHON PACKAGES?  
+  # BUILD WHEELS ONLY NEEDED FOR NON-PURE PYTHON PACKAGES
+  # This is described here: https://packaging.python.org/en/latest/overview/#python-binary-distributions
   # build_wheels:
   #   name: Build wheels
   #   runs-on: ${{ matrix.os }}
