@@ -37,8 +37,8 @@ Instructions on `Packaging` from python are provided here:
 - https://packaging.python.org/en/latest/tutorials/packaging-projects/
 
 ```
-my_package/
-    my_package/ 
+template_python_library/                      
+    template_python_library/ 
         __init__.py
         files.py
         modules/
@@ -108,16 +108,16 @@ my_package/
 ```
 
 Steps to update this package for new repository: 
-1. `find` all instances of "{my_project}" and replace with package name
-    - Also replace all `{template_python_library}`
-2. rename my_package, and the name of this folder to be the correct names. 
+1. `find` all instances of `{my_project}`, `{REPLACE}`, `template_python_library` and and replace with package name
+2. That includes renaming this current directory, and the source directory (`template_python_library`)
 3. fill in the `"description"` in the `pyproject.toml`
 4. update `requirements.txt` as well as `dependencies` in `pyproject.toml`
 5. Search the repositry for `{update_here}` to find instances that should be updated for 
-    the new package being built. 
-6. After pushing to new repository on github, make sure to change the setting to include
-    github pages, and direct them to look in the branch=main, /docs folder 
-7. If there is a problem finding the package structure, then you can specify package information: 
+    the new package being built.
+6. ADD INSTRUCTIONS TO STOP TRACKING THIS GITHUB REPOSITORY, AND START A NEW REPOSITORY. 
+7. After pushing to new repository on github, make sure to change the `settings` on your github repo `pages`
+    to include github pages, and direct them to look in the branch=main, /docs folder. 
+8. If there is a problem finding the package structure when building, then you can specify package information: 
     https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html#dynamic-metadata
     This describes a system similar to defining `packages=['pymskt', 'pymskt.image', etc.]` in `setup()`
 

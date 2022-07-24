@@ -32,18 +32,18 @@ dynamic = ["version"]
 
 
 [project.urls]
-Homepage = "https://github.com/gattia/{my_package}"
+Homepage = "https://github.com/gattia/template_python_library/"  {REPLACE}
 # build the documentation using github pages, for others will go to github.io, I have redirected to: 
-Documentation = "https://anthonygattiphd.com/{my_package}/" 
+Documentation = "https://anthonygattiphd.com/template_python_library/"   {REPLACE}
 
 # Dynamic metadata - E.g., version here. 
 # https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html#dynamic-metadata
 [tool.setuptools.dynamic]
-version = {attr = "template_python_library.__version__"} # {my_package}
+version = {attr = "template_python_library.__version__"} # {REPLACE}
 
 # setuptools specific items
 [tool.setuptools]
-packages = ['template_python_library']  # location of the package {my_package}
+packages = ['template_python_library']  # location of the package {REPLACE}
 
 # information about "tools" 
 [tool.isort]

@@ -37,6 +37,7 @@ docs:
 	pdoc --output-dir docs/ --html --force template_python_library
 	mv docs/template_python_library/* docs/
 	rm -rf docs/template_python_library
+# {REPLACE}
 
 test:
 	set -e
@@ -53,7 +54,8 @@ autoformat:
 	black --config pyproject.toml .
 
 clean:
-	rm -rf build dist {my_package}.egg-info 
+	rm -rf build dist template_python_library.egg-info  
+#{REPLACE}
 
 coverage: 
 	coverage run -m pytest

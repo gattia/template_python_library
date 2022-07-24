@@ -1,6 +1,6 @@
-# Contributing to cycpd
+# Contributing to template_python_library  {REPLACE}
 
-Thank you for considering to contribute to `{my_package}`.
+Thank you for considering to contribute to `template_python_library`.  {REPLACE}
 
 This guide is inspired by [DOSMA](https://github.com/ad13/DOSMA).
 
@@ -31,7 +31,7 @@ A world-class feature request addresses the following points:
 4. In case this is related to a paper, please attach a link;
 5. Attach any additional information (drawings, screenshots, etc.) you think may help.
 
-If your issue is well written we're already 80% of the way there by the time you post it. Follow the instructions in the [Feature Request](https://github.com/gattia/{my_package}/issues/new/choose)
+If your issue is well written we're already 80% of the way there by the time you post it. Follow the instructions in the [Feature Request](https://github.com/gattia/template_python_library/issues/new/choose)  {REPLACE}
 
 ## Contributing
 Before writing code, we strongly advise you to search through the existing PRs or issues to make sure that nobody is already working on the same thing. If you are unsure, it is always a good idea to open an issue to get some feedback.
@@ -40,17 +40,17 @@ You will need basic git proficiency to be able to contribute to cycpd. git is no
 
 Follow these steps to start contributing:
 
-1. Fork the [`repository`](https://github.com/gattia/{my_package}) by clicking on the 'Fork' button the repository's page. This creates a copy of the code under your GitHub user account.
+1. Fork the [`repository`](https://github.com/gattia/template_python_library) by clicking on the 'Fork' button the repository's page. This creates a copy of the code under your GitHub user account. {REPLACE}
 
 2. Clone your fork to your local disk, and add the base repository as a remote:
 
    ```bash
-   $ git clone git@github.com:<your Github handle>/{my_package}.git
-   $ cd {my_package}
-   $ git remote add upstream https://github.com/gattia/{my_package}.git
+   $ git clone git@github.com:<your Github handle>/template_python_library.git   {REPLACE}
+   $ cd template_python_library  {REPLACE}
+   $ git remote add upstream https://github.com/gattia/template_python_library.git  {REPLACE}
    ```
 
-3. Create a development branch - all changes should merged with the `{my_package}`-`development` branch:
+3. Create a development branch - all changes should merged with the `template_python_library`-`development` branch:  {REPLACE}
 
    ```bash
    $ git checkout -b development
@@ -155,7 +155,7 @@ This should be done **before** pushing your changes to your respository to ensur
 ### Tests
 
 Library tests can be found in the 
-[tests folder](https://github.com/gattia/{my_package}/tree/main/testing).
+[tests folder](https://github.com/gattia/template_python_library/tree/main/testing). {REPLACE}
 
 From the root of the repository, here's how to run tests with `pytest` for the library:
 
@@ -164,8 +164,8 @@ $ make test
 ```
 
 ### Style guide
-`{my_package}` does not currently have proper/extensive documentation.
+`template_python_library` does not currently have proper/extensive documentation.  {REPLACE}
 
-Automatically building documentation, and re-building figures would be a great addition to the `{my_package}`. 
+Automatically building documentation, and re-building figures would be a great addition to the `template_python_library`. {REPLACE}
 
 If/when documentation is implemented, we will follow the [numpy style](https://numpydoc.readthedocs.io/en/latest/format.html).
