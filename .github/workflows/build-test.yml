@@ -53,7 +53,7 @@ jobs:
           python -m pip install --upgrade pip
           make dev
           make requirements
-          make build
+          make install
       # - name: Install Cython code
       #   run: |
       #     make build-cython
